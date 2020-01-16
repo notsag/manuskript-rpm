@@ -1,5 +1,5 @@
 %define name    manuskript
-%define version 0.9.0
+%define version 0.10.0
 %define        __spec_install_post %{nil}
 %define          debug_package %{nil}
 %define        __os_install_post %{_dbpath}/brp-compress
@@ -13,7 +13,7 @@ Group: Applications/Editors
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-buildroot
 URL: http://www.theologeek.ch/manuskript/
-SOURCE0: https://github.com/olivierkes/manuskript/archive/0.9.0.tar.gz#/%{name}-%{version}-%{release}.tar.gz
+SOURCE0: https://github.com/olivierkes/manuskript/archive/%{version}.tar.gz#/%{name}-%{version}-%{release}.tar.gz
 Packager: Maxime Gaston <maxime@gaston.sh>
 Provides: Manuskript
 Requires: python3
@@ -33,7 +33,7 @@ their first draft and then further refine and edit
 their masterpiece.
 
 %prep
-%autosetup -n %{name}-0.9.0
+%autosetup -n %{name}-%{version}
 
 %build
 # Empty section.
