@@ -1,5 +1,5 @@
 %define name    manuskript
-%define version 0.10.0
+%define version 0.11.0
 %define        __spec_install_post %{nil}
 %define          debug_package %{nil}
 %define        __os_install_post %{_dbpath}/brp-compress
